@@ -75,7 +75,6 @@ const Section = createVisualComponent({
       }
     }
     return (
-      <Grid item xs={12} key={section.id}>
         <Block 
           header={section.name} 
           card="full" 
@@ -98,7 +97,7 @@ const Section = createVisualComponent({
               </IconButton>
             </IconButtonWrapper>
           </TextWithIcon>
-          <Grid justifyItems="start" templateColumns={{xs: "100%", m: "repeat(5, 1fr)"}}>
+          <Grid justifyItems="start" templateColumns={{xs: "repeat(auto-fit, minmax(200px, 1fr))"}}>
             {section.sensors.map((sensor) => (
               <Sensor
                 key={sensor.id}
@@ -109,7 +108,6 @@ const Section = createVisualComponent({
             ))}
           </Grid>
         </Block>
-      </Grid>
     )
     //@@viewOff:render
   },

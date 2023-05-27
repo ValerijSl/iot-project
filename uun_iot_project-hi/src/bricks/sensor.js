@@ -105,14 +105,6 @@ const Sensor = createVisualComponent({
         </IconButton>
       </IconButtonWrapper>
       </TextWithIcon>
-      <TextWithIcon>
-        <CalendarTodayIcon />
-        <span style={{ margin: "5px" }}>{format(new Date(sensor.status[0].date), "MMMM do, yyyy")}</span>
-      </TextWithIcon>
-      <TextWithIcon>
-        <AccessTimeIcon />
-        <span style={{ margin: "5px" }}>{sensor.status[0].time}</span>
-      </TextWithIcon>
     </GridItem>
     )
     //@@viewOff:render

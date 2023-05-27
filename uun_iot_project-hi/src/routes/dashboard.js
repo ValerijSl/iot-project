@@ -176,9 +176,9 @@ let Dashboard = createVisualComponent({
               </PieChart>
             </ResponsiveContainer>
           </Grid.Item>
-          <Grid.Item style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Grid container templateColumns={{ xs: "repeat(12, 1fr)" }}>
-              <Grid.Item colSpan={6}>
+          <Grid.Item style={{justifyContent: 'center', alignItems: 'center' }}>
+            <Grid container templateColumns={{ xs: "50% 50%" }}>
+              <Grid.Item>
                 <Card>
                   <CardContent>
                     <Typography variant="body2" component="div">
@@ -190,7 +190,7 @@ let Dashboard = createVisualComponent({
                   </CardContent>
                 </Card>
               </Grid.Item>
-              <Grid.Item colSpan={6}>
+              <Grid.Item>
                 <Card>
                   <CardContent>
                     <Typography variant="body2" component="div">
@@ -202,7 +202,7 @@ let Dashboard = createVisualComponent({
                   </CardContent>
                 </Card>
               </Grid.Item>
-              <Grid.Item colSpan={6}>
+              <Grid.Item>
                 <Card>
                   <CardContent>
                     <Typography variant="body2" component="div">
@@ -214,7 +214,7 @@ let Dashboard = createVisualComponent({
                   </CardContent>
                 </Card>
               </Grid.Item>
-              <Grid.Item colSpan={6}>
+              <Grid.Item>
                 <Card>
                   <CardContent>
                     <Typography variant="body2" component="div">
@@ -225,7 +225,8 @@ let Dashboard = createVisualComponent({
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid.Item> </Grid>
+              </Grid.Item> 
+              </Grid>
           </Grid.Item>
 
 
